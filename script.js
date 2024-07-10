@@ -30,7 +30,7 @@ function onAddItemSubmit(e) {
 
         removeItemFromStorage(itemToEdit.textContent);
         itemToEdit.classList.remove('edit-mode');
-        itemToEdit.remove()
+        itemToEdit.remove();
         isEditMode = false;
     } else {
         if (checIfItemExists(newItem)) {
@@ -177,7 +177,7 @@ function filterItems(e){
 
 }
 
-function chechUI()
+function chechUI() 
 {
     itemInput.value = "";
     const items = itemList.querySelectorAll('li');
